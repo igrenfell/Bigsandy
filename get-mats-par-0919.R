@@ -6,6 +6,7 @@
 setwd("G:\\Workspace\\bigsandy0919")
 
 flist <- Sys.glob("*.lvm")
+fuck  <- 69
 
 nfiles <- length(flist)
 library(foreach)
