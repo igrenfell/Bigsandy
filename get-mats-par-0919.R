@@ -1,8 +1,8 @@
 
 
-setwd("E:\\Workspace\\Sand burner\\SandBox_4000s_Data")
-setwd("E:\\Workspace\\Sand burner\\4000s_21Feb2019")
-setwd("E:\\Workspace\\Sand burner\\032519 data")
+#setwd("E:\\Workspace\\Sand burner\\SandBox_4000s_Data")
+#setwd("E:\\Workspace\\Sand burner\\4000s_21Feb2019")
+#setwd("E:\\Workspace\\Sand burner\\032519 data")
 setwd("G:\\Workspace\\bigsandy0919")
 
 flist <- Sys.glob("*.lvm")
