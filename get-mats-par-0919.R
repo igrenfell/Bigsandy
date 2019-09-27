@@ -187,7 +187,7 @@ get.sub.mat <- function(i)
   
   
   ###Removing bad TCs
-  outmat <- outmat[-c(7, 27),]
+  outmat <- outmat[-c(7, 27, 29),]
   write.table(outmat, fout)  
   
   
@@ -215,6 +215,10 @@ get.sub.mat <- function(i)
   ptvec <- apply(ptmat, 2, "mean")
   
   poutmat <- cbind(dseq, pvec, ptvec)
+  indseq <- 1:dim(poutmat)[1]
+  isvalid <- as.logical(pvec + ptvec < 1000)
+  indval <- indseq[isvalid]
+  poutmat <- poutmat[indval,]
   fout <- paste(bnum, "-pressure-temp.txt", sep = "")
   write.table(poutmat, fout)
   
