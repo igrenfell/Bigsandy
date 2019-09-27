@@ -316,6 +316,11 @@ for(i in 1:nfiles)
 }
 
 
+a <- 1
+b <- 1
+print(a+b)
+
+
 setwd("E:\\Workspace\\Sand burner\\Output-4000s")
 setwd("E:\\Workspace\\Sand burner\\Output-4000s\\Output-4000-031419")
 
